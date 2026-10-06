@@ -1,0 +1,88 @@
+{
+  "package": "1.0.0",
+  "status": "Beta source; no native binary produced here; not published",
+  "sdk": "PFT-SDK-Context-EChVepAh",
+  "sml_version": "3.12.0",
+  "sdk_headers_sha256": {
+    "Source/FactoryGame/Public/UI/FGInteractWidget.h": "6c004a1166f8ac375ea4ab1e0aef709e69fb8a614784439c777ea9c41f1decf8",
+    "Mods/SML/Source/SML/Public/Subsystem/ModSubsystem.h": "0a38f647ac1b967d738a57fcffac4f18a9e9efc27856d23d68b6f2f4b7c46717",
+    "Source/FactoryGame/Public/FGSaveInterface.h": "b2850829320bd255eaa6e576d7d375e8df5acc9eb18196daabe76f3f011b50f9",
+    "Mods/SML/Source/SML/Public/Command/ChatCommandInstance.h": "a66448595f253b69a2cc5302c162176cddf4ad0f40f87091670213268b295b9b",
+    "Mods/SML/Source/SML/Public/Module/GameWorldModule.h": "51acb2c7f2d613335e7812e8f783f4d818665f9074a47b54e5564b5b9d5cad76",
+    "Mods/SML/Source/SML/Public/Module/GameInstanceModule.h": "7eedd712345b421bcfb9de99a0279e117c09893c0afbf5ea0644030fd71f65c0",
+    "Source/FactoryGame/Public/FGRemoteCallObject.h": "62bd626bb703d23e310c39d36e6cc65934fcab2b346321b7acb918f346d24bc3",
+    "Source/FactoryGame/Public/FGTrain.h": "492bbf392a6cee6707bf4c9dca85a2a0d88847882ab1a85e2e7302212b49dc50",
+    "Source/FactoryGame/Public/FGLocomotive.h": "6ef8d3eca8ed481e79efc6215aea7afb73b893635174c5c01244b6f4bb660b81",
+    "Source/FactoryGame/Public/FGFreightWagon.h": "8372d1407b1a371030b9b309145ef6e754e77a2493bbce975c3f4b0af555a369",
+    "Source/FactoryGame/Public/FGRailroadTimeTable.h": "226e7b1a9ec86c2a242619f5e1c893183709e31429e219fe53d90b6fa4997a97",
+    "Source/FactoryGame/Public/FGRailroadSubsystem.h": "132cb27c9fb54ea38fa192467d54f714ae7acf43d0b66312d7688bfcf996b08f",
+    "Source/FactoryGame/Public/FGTrainStationIdentifier.h": "f9a78a204e6cec07e449eb2a72461459483201e5f4ef1710cfdf81716f740b51",
+    "Source/FactoryGame/Public/FGInventoryComponent.h": "0e617d9baadf585acf4a2f1be40a728da182a1d14f5b881f439f1139a0c2ea42",
+    "Source/FactoryGame/Public/Buildables/FGBuildableRailroadStation.h": "5f65e128fb5aa38ad943cb283abaca4969fe99fa7b87d640798384188378040d",
+    "Mods/SML/Source/SML/Public/Subsystem/SubsystemActorManager.h": "45508d3ea1561e1e6b7711e1c291c2b693a8315faee5b15aff0518e17d0e050b",
+    "Source/FactoryGame/Public/FGPlayerController.h": "8affc7387381eb4138bfda8b16e48e52f710cd6a455610384940f7d6e9973dd9",
+    "Source/FactoryGame/Public/FGHUD.h": "46e5f1fbc1bc81244178590c9556eeecc10a43b4e72267e800ec74770e866cec",
+    "Source/FactoryGame/Public/UI/FGGameUI.h": "86e51b141d631268f500840d378b80d311298627e08fe3094955addccd0eb509",
+    "Mods/SML/Source/SML/Public/Patching/NativeHookManager.h": "0315dde66ad44cf2acb17456c254d0189cde9a5c6de7c489842d1853b68b7d21",
+    "Mods/SML/Source/SML/Public/Command/CommandSender.h": "a4750ba8dbeb692ddaa9c37e6197f010bdcd23fd30614cda20aadd617134740f",
+    "Source/FactoryGame/Public/Buildables/FGBuildableTrainPlatform.h": "5b03325e5cc15ef3846943e5ca4769e4cdbd0ada97c71ef63a74e158f67487aa",
+    "Source/FactoryGame/Public/Buildables/FGBuildableTrainPlatformCargo.h": "c19a47b1a8a5316c6bc06cf465fec8da634064da1bb8c58dc1995f79cce27347",
+    "Source/FactoryGame/Public/FGRecipeManager.h": "1b8ae1efa2f124d2d5ed8250664d3c35756202d9e6babdc052fb8e0397681dd7",
+    "Source/FactoryGame/Public/Resources/FGItemDescriptor.h": "8efd477fc3e183090935eb0301ef238efb5d8ddbc9a6a56fe68a37106135ee13",
+    "Mods/SML/Source/SML/Public/ModLoading/ModLoadingLibrary.h": "287c5d0496310ee0f03cf85b56c95d8c1ced53aec2c0000e3f2aa2000a3ce50c",
+    "Mods/SML/Source/SML/Private/ModLoading/ModLoadingLibrary.cpp": "9dae962f60e4ab8607907cf3cc4736886c7147b1332557d37c8c6e2282e92cef"
+  },
+  "changes_from_r31": [
+    "New PNG header logo via cached SML mod icon loader; transient widget texture reference; client-side load only.",
+    "Resources/Icon128.png and Config/PluginSettings.ini staging.",
+    "Version 1.0.0 in UI, startup, source metadata, installer and docs.",
+    "Apply/install workflow includes icon and backup/rollback; installer rejects stale DLL or missing/different logo.",
+    "Combined bilingual GitHub/mod-page/release disclosures and build instructions."
+  ],
+  "verification": {
+    "self_test": "PASS: verify.sh --self-test, C++20 production rule/inventory/docking/cargo/sync/features adapters with API doubles. Full native UI not compiled.",
+    "workflow_test": "PASS: source/config/resources backup and rollback, preserved user files, paths with spaces, failed build step ordering, stale DLL rejection, missing/different logo rejection and icon installation.",
+    "rebuild_workflow_test": "PASS: disposable build-install success, failed build exit37 and stale DLL; old build outputs backed up, unrelated binaries preserved. Commands are fixtures, not Unreal.",
+    "shell_syntax": "PASS: bash -n apply.sh, verify.sh, install.sh and build-install.sh.",
+    "source_diff": "PASS: gameplay source byte-identical to r31; only PTCWidget.cpp/.h and module startup marker changed.",
+    "source_review": "PASS: balanced C++ delimiters and SML3.12.0 loader signature/lifetime checked. No native compiler validation.",
+    "package_checks": "Package structure, exact icon hash, staging setting, version fields, literal Printf formats, include order and SHA256 manifest are checked by tests/package_check.py.",
+    "native_editor_uht_slate_cook": "NOT RUN: Unreal engine/project unavailable here.",
+    "native_win64_shipping": "NOT RUN: Unreal engine/project unavailable here.",
+    "native_server_targets": "NOT RUN: Unreal engine/project unavailable here.",
+    "in_game_1_0_0_logo": "NOT RUN: requires the user build and game.",
+    "multiplayer_dedicated": "NOT RUN",
+    "smm_release_install": "NOT RUN: requires Alpakit Release output."
+  },
+  "user_runtime_evidence": {
+    "paired_departure": "User confirms paired departure works.",
+    "r31_ui": "User screenshot grafik(20261005-232535).png shows graphite header, old geometric train mark and tagline. This validates that visual section of r31 only.",
+    "loading": "Earlier r30 gameplay screenshot reports 39 items missing and last top-up made no progress. No later confirmation resolves this."
+  },
+  "runtime_limitations": [
+    "Exact-full top-ups remain an open known issue; 1.0.0 logo integration does not modify cargo code.",
+    "Native template/target save persistence, RPC round-trips, multiplayer/server and fluid behavior still require release verification.",
+    "Partial-fill and item targets govern departure, not exact transfer limits; remainder batch policy remains independent.",
+    "Packaged platforms and game branches must be checked on their actual native builds."
+  ],
+  "logo": {
+    "file": "PioneerTrainControl/Resources/Icon128.png",
+    "sha256": "82c771561f1ddeba26ae00e38a1dea01c781118ceffa17008500c1e65ceb3241",
+    "size_pixels": [
+      1254,
+      1254
+    ],
+    "provenance": "AI-generated original PNG, copied without image editing.",
+    "header_size_slate_units": [
+      72,
+      72
+    ]
+  },
+  "network_disclosure_basis": "Source audit carried forward from r31; no new gameplay/RPC/network code, only local SML cached image loading. No packet trace or bandwidth measurement.",
+  "sources": [
+    "https://docs.ficsit.app/satisfactory-modding/latest/Development/BeginnersGuide/ReleaseMod.html",
+    "https://docs.ficsit.app/satisfactory-modding/latest/Development/BeginnersGuide/Adding_Ingame_Mod_Icon.html",
+    "https://docs.ficsit.app/satisfactory-modding/latest/UploadToSMR.html",
+    "https://ficsit.app/content-policy"
+  ]
+}
